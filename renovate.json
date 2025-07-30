@@ -34,7 +34,7 @@
       "datasourceTemplate": "github-releases",
       "versioningTemplate": "{{version}}",
       "packageNameTemplate": "actions/runner"
-    } 
+    }
   ],
   "packageRules": [
     {
@@ -67,12 +67,20 @@
       "platformAutomerge": true
     },
     {
-      "matchManagers": ["regex"],
-      "matchPackageNames": ["cirruslabs/cirrus-cli"]
+      "matchManagers": [
+        "custom.regex"
+      ],
+      "matchPackageNames": [
+        "cirruslabs/cirrus-cli"
+      ]
     },
     {
-      "matchManagers": ["regex"],
-      "matchPackageNames": ["actions/runner"]
+      "matchManagers": [
+        "custom.regex"
+      ],
+      "matchPackageNames": [
+        "actions/runner"
+      ]
     }
   ],
   "postUpdateOptions": [
