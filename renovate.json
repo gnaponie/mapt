@@ -13,7 +13,7 @@
   "customManagers": [
     {
       "customType": "regex",
-      "managerFilePatterns": [
+      "fileMatch": [
         "Makefile"
       ],
       "matchStrings": [
@@ -25,7 +25,7 @@
     },
     {
       "customType": "regex",
-      "managerFilePatterns": [
+      "fileMatch": [
         "Makefile"
       ],
       "matchStrings": [
